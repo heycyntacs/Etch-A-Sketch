@@ -33,6 +33,7 @@ container.style.top = '60%';
 container.style.left = '50%';
 container.style.transform = 'translate(-50%, -60%)';
 
+
 function changeGridSize (gridSize) {
 for (let i = 0; i < gridSize; i++) {
     for (let j = 0; j < gridSize; j++) {
@@ -44,6 +45,11 @@ for (let i = 0; i < gridSize; i++) {
     }
 }
 }
+
+if (container.innerHTML === '') {
+    changeGridSize(16);
+    hover();
+};
 
 function hover() {
     let grids = document.querySelectorAll('div');
