@@ -17,7 +17,7 @@ gridButton.addEventListener('click', () => {
         gridSize = prompt('Enter a Grid Size');
         gridSize = parseInt(gridSize);
     } while (isNaN(gridSize));
-    if (gridSize > 100 || gridSize < 10) {
+    if (gridSize > 99 || gridSize < 10) {
         alert('Grid size cannot be less than 10 or more than 99');
         return;
     }
